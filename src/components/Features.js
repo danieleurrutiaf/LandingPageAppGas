@@ -9,11 +9,11 @@ const Features = () => {
         <ul>
           <li>
             <span className="feature-icon"></span>
-           Intuitiva y facil de usar
+            Facil de usar
           </li>
           <li>
             <span className="feature-icon"></span>
-            Cifrado de Contraseña
+            Contraseña encriptada
           </li>
           <li>
             <span className="feature-icon"></span>
@@ -21,7 +21,7 @@ const Features = () => {
           </li>
           <li>
             <span className="feature-icon"></span>
-            Geolocalización del repartidor
+            Ve tu pedido en tiempo real
           </li>
         </ul>
       </div>
