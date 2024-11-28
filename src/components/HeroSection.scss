@@ -1,0 +1,61 @@
+.hero-section {
+  background-attachment: fixed;
+  background-image: url('../assets/images/Header.jpg');
+  background-size: cover;  /* Esto asegura que la imagen cubra toda el área */
+  background-position: center center;  /* Centra la imagen */
+  background-repeat: no-repeat;  /* Evita que la imagen se repita */
+  height: 60vh;  /* Altura por defecto en pantallas grandes */
+  padding-top: 350px;
+  color: #fff;
+
+  .hero-content {
+    text-align: center;
+    height: 100%;
+
+    .functionalities {
+      vertical-align: bottom;
+      margin-top: 10%;
+
+      .download-btn {
+        padding: 15px 30px;
+        background-color: #1e90ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 10px;
+      }
+
+      .qr-code {
+        margin-top: 15px;
+        width: 150px;
+        height: auto;
+      }
+    }
+  }
+
+  // Responsividad para pantallas pequeñas (móviles)
+  @media (max-width: 768px) {
+    height: 40vh !important;  /* Ajusta la altura en móviles */
+    
+    .hero-content {
+      margin-top: 40%!important;
+    }
+    .functionalities {
+      &.web {
+        display: none;
+      }
+    }
+  }
+
+  // En pantallas grandes, ocultar el botón y mostrar el QR
+  @media (min-width: 769px) {
+    .functionalities {
+      
+      &.mobile {
+        display: none;
+      }
+    }
+  }
+}

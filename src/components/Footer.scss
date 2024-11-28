@@ -1,0 +1,73 @@
+.footer {
+  background: linear-gradient(to bottom, #00a5bb, #000000);
+  padding: 40px 0;
+  text-align: center;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer-logo {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+
+      .social-icon {
+        color: black;
+        font-size: 1.8rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: white; // Cambia el color al pasar el mouse
+        }
+      }
+    }
+
+    .footer-info {
+      color: white;
+      font-size: 0.9rem;
+
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+// Responsividad para pantallas pequeñas
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0; /* Reduce el padding para móviles */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer-logo {
+      margin-bottom: 15px;
+    }
+
+    .footer-social {
+      margin-bottom: 15px;
+      gap: 10px; /* Reduce el espacio entre los iconos */
+    }
+
+    .footer-info {
+      font-size: 1rem; /* Aumenta un poco el tamaño de fuente */
+    }
+  }
+}
